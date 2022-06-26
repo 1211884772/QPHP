@@ -269,26 +269,6 @@ class QPHP
         define('ORACLE_POOL',$conf_arr);
         $conf_arr=[];
 
-
-
-//        if(isset($mysql)){
-//            extract($mysql);
-//            define('MYSQL_HOST',$host);
-//            define('MYSQL_DB',$dbname);
-//            define('MYSQL_USER',$mysql_user);
-//            define('MYSQL_PWD',$mysql_pwd);
-//            define('MYSQL_PORT',$port);
-//        }
-//
-//        if(isset($oracle)){
-//            extract($oracle);
-//            define('ORACLE_HOST',$host);
-//            define('ORACLE_DB',$dbname);
-//            define('ORACLE_USER',$oracle_user);
-//            define('ORACLE_PWD',$oracle_pwd);
-//            define('ORACLE_PORT',$port);
-//        }
-
         if(isset($mem)){
             extract($mem);
             define('MEM_HOST',$host);

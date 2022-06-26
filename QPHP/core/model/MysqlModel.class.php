@@ -37,7 +37,7 @@ class MysqlModel extends BaseModel
             }
         }
         $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} {$this->where}";
-        $sel_find =  $this->executeSql("getRow");
+        $sel_find =  $this->executeSql("getRow",$this->sql);
         //初始化
         $this->free();
         return $sel_find;
@@ -55,7 +55,7 @@ class MysqlModel extends BaseModel
             }
         }
         $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where} {$this->order} {$this->limit};";
-        $sel =  $this->executeSql("getRows");
+        $sel =  $this->executeSql("getRows",$this->sql);
         //初始化
         $this->free();
         return $sel;
@@ -73,7 +73,7 @@ class MysqlModel extends BaseModel
              }
          }
          $this->sql = "select count(*) qphp_count from (select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}) AS qphp_table;";
-         $sel_count =  $this->executeSql("getRow");
+         $sel_count =  $this->executeSql("getRow",$this->sql);
          //初始化
          $this->free();
          return $sel_count;
@@ -81,7 +81,7 @@ class MysqlModel extends BaseModel
 
     public function findAll(){
         $this->sql  = "select * from {$this->table}";
-        $sel_all= $this->executeSql("getRows");
+        $sel_all= $this->executeSql("getRows",$this->sql);
         //初始化
         $this->free();
         return $sel_all;
@@ -112,7 +112,7 @@ class MysqlModel extends BaseModel
             $value = preg_replace("/,$/", "", $value);
             $sql = "INSERT INTO {$this->table} ($field) VALUES($value)";
             $this->sql=$sql;
-            $add=  $this->executeSql("insert");
+            $add=  $this->executeSql("insert",$this->sql);
             //初始化
             $this->free();
             if($add){
@@ -146,7 +146,7 @@ class MysqlModel extends BaseModel
             $value = preg_replace("/,$/", "", $value);
             $sql = "INSERT INTO {$this->table} ($field) VALUES $value";
             $this->sql=$sql;
-            $add_all= $this->executeSql("insertAll");
+            $add_all= $this->executeSql("insertAll",$this->sql);
             //初始化
             $this->free();
             return $add_all;
@@ -183,7 +183,7 @@ class MysqlModel extends BaseModel
             return false;
         }
         $this->sql=$sql;
-        $edit= $this->executeSql("update");
+        $edit= $this->executeSql("update",$this->sql);
         //初始化
         $this->free();
         return $edit;
@@ -211,7 +211,7 @@ class MysqlModel extends BaseModel
                 return false;
             }
             $this->sql=$sql;
-            $del =  $this->executeSql("delete");
+            $del =  $this->executeSql("delete",$this->sql);
             //初始化
             $this->free();
             return $del;

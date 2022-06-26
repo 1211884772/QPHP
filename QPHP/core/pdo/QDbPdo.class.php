@@ -13,9 +13,9 @@
 abstract class QDbPdo implements QDbPdoInterface {
 
     //数据库类型
-    public $dbType = 'mysql';
+    protected $dbType = '';
     //连接数据库配置文件
-    public $configFile = null;
+    protected $configFile = null;
     //当前连接ID
     protected $connectId = null;
     //操作所影响的行数

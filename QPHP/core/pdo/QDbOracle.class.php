@@ -3,9 +3,10 @@
 
 class QDbOracle extends QDbPdo
 {
-    //数据库类型
-    public $dbType = 'oracle';
-    public $dbKey = 'oracle_0';
+    //数据库类型没有实际意义只是标识
+    protected $dbType = 'oracle';
+    //数据库连接标识
+    private $dbKey = 'oracle_0';
     public function __construct($dbKey)
     {
         $this->dbKey = $dbKey;
@@ -19,7 +20,6 @@ class QDbOracle extends QDbPdo
      */
     protected function connect() {
         if($this->connectId == null) {
-
             $this->connectId =QDbPdoPool::Connect($this->dbKey,"oracle");
         }
 

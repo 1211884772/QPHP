@@ -18,21 +18,13 @@ class Model
                 $this->model= new MysqlModel($this->table,$this->key);
             }elseif ($this->dbType==='oracle') {
                 $this->model= new OracleModel($this->table,$this->key);
+            }else{
+                throw new Exception("Model type error");
             }
+        }else{
+            throw new Exception("The model type is empty");
         }
-        return null;
     }
 
-    public function __set($name, $value)
-    {
-        // TODO: Implement __set() method.
-        $this->$name=$value;
-    }
-
-    public function __get($name)
-    {
-        // TODO: Implement __get() method.
-        return $this->$name;
-    }
 
 }

@@ -11,14 +11,12 @@ class QDbPdoPool
 
     static public function Connect($dbKey='mysql_0',$dbType="mysql")
     {
-
         $total_num =0;
         $key_num=[];
         //连接类不够200，创建新类10个
         if(!isset(self::$instance[$dbKey])||count(self::$instance[$dbKey])<self::$num)
         {
             self::ConDB($dbType);
-
             //var_dump(self::$instance);
         }
         foreach (self::$instance as $key=>$val){

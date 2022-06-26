@@ -3,15 +3,16 @@
 
 abstract class BaseModel
 {
-    public $db =null;
+    protected $db =null;
     public $table='';//数据表
     public $key='';//主键
-    public $database='';//数据库
+
 
     //链式操作sql
+    protected $database='';//数据库
     protected $where='';
     protected $join=array();
-    public $sql ='';
+    protected $sql ='';
     protected $asTable='';//表别名
     protected $field= ' * ';
     protected $order= '';
@@ -53,12 +54,7 @@ abstract class BaseModel
         $this->database='';
     }
 
-    public function field($field){
-        if(!empty($field)){
-            $this->field=$field;
-        }
-        return $this;
-    }
+
 
     /**
      * 数据表名称
@@ -88,6 +84,14 @@ abstract class BaseModel
         $this->asTable=$asTable;
         return $this;
     }
+
+    public function field($field){
+        if(!empty($field)){
+            $this->field=$field;
+        }
+        return $this;
+    }
+
     public function leftJoin($join){
         if(!empty($join)) {
             $this->join[]=" left join {$join} ";
@@ -196,11 +200,11 @@ abstract class BaseModel
      * 执行sql
      * @return array
      */
-    public function executeSql($execute_fun){
+    public function executeSql($execute_fun,$sql){
         if($this->echo_sql){
-            echo $this->sql;
+            echo $sql;
         }
-        return $this->db->$execute_fun($this->sql);
+        return $this->db->$execute_fun($sql);
     }
 
 

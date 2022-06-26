@@ -3,10 +3,11 @@
 
 class QDbMysql extends QDbPdo
 {
-    //数据库类型
-    public $dbType = 'mysql';
+    //数据库类型没有实际意义只是标识
+    protected $dbType = 'mysql';
 
-    public $dbKey = 'mysql_0';
+    //数据库连接标识
+    private $dbKey = 'mysql_0';
     public function __construct($dbKey)
     {
         $this->dbKey = $dbKey;
