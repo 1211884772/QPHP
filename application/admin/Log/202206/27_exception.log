@@ -1,143 +1,127 @@
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:20
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getLastSql() on null
+Error: Call to a member function getLastSql() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:90
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): Model->getLastSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function asTable() on null
+Error: Call to a member function asTable() on null in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:13
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Class not found IPdo
+Exception: Class not found IPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:201
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 [internal function]: QPHP->load('IPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(13): spl_autoload_call('IPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('QDbPdo')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(4): spl_autoload_call('QDbPdo')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('QDbMysql')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): spl_autoload_call('QDbMysql')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(70): QDbFactory::getDb('mysql_1', 'mysql')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(44): BaseModel->Db('mysql_1')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(21): Model->Db('mysql_1')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#14 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#15 {main}
+Code: 0 Message: Class not found IPdo
+Exception: Class not found IPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:201
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+#0 [internal function]: QPHP->load('IPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(13): spl_autoload_call('IPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('QDbPdo')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(4): spl_autoload_call('QDbPdo')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('QDbMysql')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): spl_autoload_call('QDbMysql')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(70): QDbFactory::getDb('mysql_1', 'mysql')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(44): BaseModel->Db('mysql_1')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(21): Model->Db('mysql_1')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#14 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#15 {main}
+Code: 0 Message: Class not found IPdo
+Exception: Class not found IPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:201
 Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
-Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
-Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
-PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
-Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(20): BaseModel->executeSql('getRows')
-#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
-#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
-#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
-#7 {main}
+#0 [internal function]: QPHP->load('IPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(13): spl_autoload_call('IPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('QDbPdo')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(4): spl_autoload_call('QDbPdo')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(203): require_once('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('QDbMysql')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): spl_autoload_call('QDbMysql')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(70): QDbFactory::getDb('mysql_1', 'mysql')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(44): BaseModel->Db('mysql_1')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(21): Model->Db('mysql_1')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#14 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#15 {main}

@@ -74,14 +74,14 @@ php模型分表查询，并排序
          //第二页 id<35 //分页由前端做，一次性返回多条数据
          $sql1="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
  where u.id<35 ORDER BY u.create_time desc limit 10";
-         $this->model->getLastSql();
-         $data_1 = $this->model->Db('mysql_1')->executeSql("getRows",$sql1);
+         $this->getLastSql();
+         $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
          $sql2="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
  where u.id<35 ORDER BY u.create_time desc limit 10";
-         $data_2=$this->model->Db('mysql_2')->executeSql("getRows",$sql2);
+         $data_2=$this->Db('mysql_2')->executeSql("getRows",$sql2);
          $sql3="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
  where u.id<35 ORDER BY u.create_time desc limit 10";
-         $data_3=$this->model->Db('mysql_3')->executeSql("getRows",$sql3);
+         $data_3=$this->Db('mysql_3')->executeSql("getRows",$sql3);
          $data = array_merge($data_1,$data_2,$data_3);
          $sort_c = array_column($data,'create_time');
          $sort_u = array_column($data,'updat_time');
@@ -319,7 +319,7 @@ $config['app'] = array(
 ```php
    //查询   
            public function getUsers(){
-               $data = $this->model->Db('mysql_0')->table('mm_user')->asTable('u')
+               $data = $this->Db('mysql_0')->table('mm_user')->asTable('u')
                    ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
                    ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
                    ->leftJoin('mm_address  a on a.user_id =u.id')
@@ -331,8 +331,8 @@ $config['app'] = array(
            }
        
            public function getCount(){
-               $this->model->getLastSql();
-               $data_count = $this->model->Db('mysql_0')->table('mm_user')->asTable('u')
+               $this->getLastSql();
+               $data_count = $this->Db('mysql_0')->table('mm_user')->asTable('u')
                    ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
                    ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
                    ->leftJoin('mm_address  a on a.user_id =u.id')
@@ -349,7 +349,7 @@ $config['app'] = array(
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->Db('mysql_0')->table('mm_user')->insert($data);
+            $last_id = $model->Db('mysql_0')->table('mm_user')->insert($data);
 //修改
         $model = new UserModel();
             $arr =array(
@@ -359,20 +359,20 @@ $config['app'] = array(
                 'address'=>$address
             );
             $where =" id={$id}";
-            $res=$model->model->Db('mysql_0')->table('mm_user')->where($where)->update($arr);
+            $res=$model->Db('mysql_0')->table('mm_user')->where($where)->update($arr);
 
 
 //删除
             $model = new UserModel();
             $where ="id={$id}";
-            $res= $model->model->Db('mysql_0')->table('mm_user')->where($where)->delete();
+            $res= $model->Db('mysql_0')->table('mm_user')->where($where)->delete();
 
 ```
 ### 2.新增Model的oracle链式查询
 ```php
  //查询
     public function getUser(){
-        $data = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
+        $data = $this->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
@@ -385,7 +385,7 @@ $config['app'] = array(
 
 
     public function getCount(){
-        $data_count = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
+        $data_count = $this->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
@@ -403,7 +403,7 @@ $config['app'] = array(
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->Db('mysql_0')->table('"mm_user"')->insert($data);
+            $last_id = $model->Db('mysql_0')->table('"mm_user"')->insert($data);
 
 //修改
         $model = new UserModel();
@@ -414,12 +414,12 @@ $config['app'] = array(
                 'address'=>$address
             );
             $where ="\"id\"={$id}";
-            $res=$model->model->Db('mysql_0')->table('"mm_user"')->where($where)->update($arr);
+            $res=$model->Db('mysql_0')->table('"mm_user"')->where($where)->update($arr);
 
 //删除
             $model = new UserModel();
             $where ="\"id\"={$id}";
-            $res= $model->model->Db('mysql_0')->table('"mm_user"')->where($where)->delete();
+            $res= $model->Db('mysql_0')->table('"mm_user"')->where($where)->delete();
 
 
 ```

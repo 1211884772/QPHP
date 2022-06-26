@@ -11,7 +11,7 @@ class UserModel extends Model
 
 
     public function getUser(){
-        $data = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
+        $data = $this->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
@@ -24,7 +24,7 @@ class UserModel extends Model
 
 
     public function getCount(){
-        $data_count = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
+        $data_count = $this->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')

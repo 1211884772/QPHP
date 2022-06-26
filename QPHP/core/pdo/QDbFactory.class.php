@@ -12,17 +12,18 @@ class QDbFactory
                 if(self::$qdb instanceof QDbMysql){
                     return self::$qdb;
                 }else{
-                    return new QDbMysql($dbKey);
+                    self::$qdb = new QDbMysql($dbKey);
                 }
             }elseif ($dbType==='oracle') {
                 if(self::$qdb instanceof QDbOracle){
                     return self::$qdb;
                 }else{
-                    return new QDbOracle($dbKey);
+                    self::$qdb = new QDbOracle($dbKey);
                 }
             }else{
                 throw new Exception("Database type error");
             }
+            return self::$qdb;
         }else{
             throw new Exception("The database type is empty");
         }

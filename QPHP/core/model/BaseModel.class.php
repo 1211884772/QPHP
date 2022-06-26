@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class BaseModel
+abstract class BaseModel implements IModel
 {
     protected $db =null;
     public $table='';//数据表
@@ -18,6 +18,8 @@ abstract class BaseModel
     protected $order= '';
     protected $limit = '';
     protected $echo_sql=false;
+
+    protected $dbType = '';
     public function __construct($dbType='mysql')
     {
         $this->dbType = $dbType;
@@ -54,12 +56,11 @@ abstract class BaseModel
         $this->database='';
     }
 
-
-
     /**
      * 数据表名称
-     * @param $table
-     * @return $this
+     * @param $database
+     * @return $this|IModel
+     * @throws Exception
      */
     public function Db($database){
         //初始化
@@ -208,5 +209,6 @@ abstract class BaseModel
     }
 
 
+    abstract public function findAll();
 
 }

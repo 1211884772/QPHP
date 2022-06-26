@@ -3,14 +3,14 @@
 
 /**
 +------------------------------------------------------------------------------
- * Yzm Framework 通用数据库访问接口
+ * QPHP Framework 通用数据库访问接口
 +------------------------------------------------------------------------------
  * @date    2018-8
- * @author  Jimmy Wang <1105235512@qq.com>
+ * @author  mumu <1211884772@qq.com>
  * @version 1.0
 +------------------------------------------------------------------------------
  */
-abstract class QDbPdo implements QDbPdoInterface {
+abstract class QDbPdo implements IPdo{
 
     //数据库类型
     protected $dbType = '';

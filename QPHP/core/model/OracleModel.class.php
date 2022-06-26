@@ -9,17 +9,6 @@ class OracleModel extends BaseModel
         $this->key=$key;
         parent::__construct('oracle');
     }
-    public function __set($name, $value)
-    {
-        // TODO: Implement __set() method.
-        $this->$name=$value;
-    }
-
-    public function __get($name)
-    {
-        // TODO: Implement __get() method.
-        return $this->$name;
-    }
 
     public function limit($num=0,$len=10){
         $end_num = $len+$num;
