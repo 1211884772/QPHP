@@ -3,7 +3,7 @@
 
 class QDbFactory
 {
-    static private $qdb=null;
+    static private $qdb=[];
 
     static public function getDb($dbKey='mysql_0',$dbType='mysql')
     {
@@ -11,11 +11,11 @@ class QDbFactory
             $db_type = ucfirst($dbType);
             $model_class = "QDb".$db_type;
             try{
-                if(self::$qdb instanceof $model_class){
-                    return self::$qdb;
+                if(isset(self::$qdb[$model_class])&&self::$qdb[$model_class] instanceof $model_class){
+                    return self::$qdb[$model_class];
                 }else{
                     if(class_exists($model_class)) {
-                        self::$qdb = new $model_class($dbKey);
+                        self::$qdb[$model_class] = new $model_class($dbKey);
                     }
                 }
             }catch (Exception $e){
@@ -38,7 +38,7 @@ class QDbFactory
             }else{
                 throw new Exception("Database type error");
             }*/
-            return self::$qdb;
+            return self::$qdb[$model_class];
         }else{
             throw new Exception("The database type is empty");
         }
