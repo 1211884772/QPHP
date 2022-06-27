@@ -12,7 +12,6 @@ ini_set("display_errors", true);//是否抛出错误 上线修改为false
 require_once APP_PATH . 'vendor/autoload.php';
 //引入框架核心文件
 require_once Lib . '/QPHP.php';
-
 $app = new QPHP();
 $app->run();
 $app = null;

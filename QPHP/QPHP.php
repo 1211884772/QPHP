@@ -61,7 +61,7 @@ class QPHP
      * 加载全局核心路由文件
      * @throws Exception
      */
-    protected function routeRequestMode(Route $route){
+    private function routeRequestMode(Route $route){
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
@@ -74,7 +74,7 @@ class QPHP
     /**
      * rpc请求方式
      */
-    protected function rpcRunRequestMode(){
+    private function rpcRunRequestMode(){
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
@@ -87,7 +87,7 @@ class QPHP
     /**
      * 核心默认请求方式
      */
-    protected function defaultRequestMode(){
+    private function defaultRequestMode(){
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
@@ -131,7 +131,7 @@ class QPHP
      * 加载全局配置核心文件
      * @throws Exception
      */
-    protected function requireConfig(Config $conf){
+    private function requireConfig(Config $conf){
         //导入全局所有配置
         $conf->requireConfigFileUrl(APP_PATH);
     }
@@ -141,7 +141,7 @@ class QPHP
      * 合并全局配置模块配置
      * @param $MODULE
      */
-    protected function requireConfigModule(Config $conf,$MODULE){
+    private function requireConfigModule(Config $conf,$MODULE){
         //加载模块配置文件
         $conf->requireConfigModuleFileUrl(APP_PATH,$MODULE);
     }
@@ -180,7 +180,7 @@ class QPHP
 
 
     //输出错误日志
-    public function AppError($errno, $errstr, $errfile, $errline){
+    private function AppError($errno, $errstr, $errfile, $errline){
         global $MODULE;//模块名称
         $module = $MODULE;
         $this->user_error->printError($module,$errno, $errstr, $errfile, $errline);
@@ -188,7 +188,7 @@ class QPHP
     }
 
     //输出异常
-    public function AppException($exception){
+    private function AppException($exception){
         global $MODULE;
         $module = $MODULE;
         $this->exception_error->printException($module,$exception);
