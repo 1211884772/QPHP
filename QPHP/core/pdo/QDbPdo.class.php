@@ -76,6 +76,18 @@ abstract class QDbPdo implements IPdo{
     }
 */
     /**
+     * 获取链接
+     * @param 指定的数据库key $pool
+     * @param $connect
+     * @param $dbKey
+     * @param $dbType
+     * @return mixed
+     */
+    public function getConnect($pool,$connect,$dbKey,$dbType){
+        return call_user_func_array(array($pool, $connect), array($dbKey,$dbType));
+    }
+
+    /**
     +----------------------------------------------------------
      * 关闭数据库连接
     +----------------------------------------------------------

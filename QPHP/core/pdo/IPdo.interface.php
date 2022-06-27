@@ -9,7 +9,7 @@ interface IPdo
      * @param $dbKey 指定的数据库key:mysql_0
      * @return mixed
      */
-    public function getConnect($dbKey);
+    public function getConnect($pool,$connect,$dbKey,$dbType);
     /**
     +----------------------------------------------------------
      * 关闭数据库连接

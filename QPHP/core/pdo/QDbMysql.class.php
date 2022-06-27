@@ -22,17 +22,8 @@ class QDbMysql extends QDbPdo
      */
     protected function connect() {
         if($this->connectId == null) {
-            $this->connectId =$this->getConnect($this->dbKey);
+            $this->connectId =$this->getConnect('QDbPdoPool', 'Connect',$this->dbKey,"mysql");
         }
-    }
-
-    /**
-     * 获取链接
-     * @param $dbKey
-     * @return mixed
-     */
-    public function getConnect($dbKey){
-        return call_user_func_array(array('QDbPdoPool', 'Connect'), array($dbKey,"mysql"));
     }
 
     /**
