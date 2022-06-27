@@ -11,24 +11,28 @@ class UserModel extends Model
 
     public function getUser(){
 
+
+        //$sql0="INSERT INTO q_user_01(id,name,pwd,create_time,updat_time) select * from q_user_01";
+
+        //$data_2=$this->Db('mysql_2')->executeSql("query",$sql0);
        // select id,title from collect where id>=(select id from collect order by id limit 90000,1) limit 10;
 
         $data = [];
         //第二页 id<35 //分页由前端做，一次性返回多条数据
-        $sql1="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-where u.id<35 ORDER BY u.create_time desc limit 10";
-        $this->getLastSql();
-        $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
-        $sql2="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-where u.id<35 ORDER BY u.create_time desc limit 10";
-        $data_2=$this->Db('mysql_2')->executeSql("getRows",$sql2);
-        $sql3="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-where u.id<35 ORDER BY u.create_time desc limit 10";
-        $data_3=$this->Db('mysql_3')->executeSql("getRows",$sql3);
-        $data = array_merge($data_1,$data_2,$data_3);
-        $sort_c = array_column($data,'create_time');
-        $sort_u = array_column($data,'updat_time');
-        array_multisort($sort_c, SORT_DESC,SORT_NUMERIC,$sort_u,SORT_DESC,SORT_NUMERIC,$data);
+//        $sql1="select * from ((select * from q_user_01 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_02 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_03 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_04 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_05 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_06 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_07 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_08 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_09 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_10 where id<1162922 ORDER BY create_time desc limit 10)) as u
+//where u.id<1162922 ORDER BY u.create_time desc limit 10";
+//        $this->getLastSql();
+//        $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
+//        $sql2="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
+//where u.id<35 ORDER BY u.create_time desc limit 10";
+//        $data_2=$this->Db('mysql_2')->executeSql("getRows",$sql2);
+//        $sql3="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
+//where u.id<35 ORDER BY u.create_time desc limit 10";
+//        $data_3=$this->Db('mysql_3')->executeSql("getRows",$sql3);
+//        $data = array_merge($data_1,$data_2,$data_3);
+//        $sort_c = array_column($data,'create_time');
+//        $sort_u = array_column($data,'updat_time');
+//        array_multisort($sort_c, SORT_DESC,SORT_NUMERIC,$sort_u,SORT_DESC,SORT_NUMERIC,$data);
 
         return $data;
     }

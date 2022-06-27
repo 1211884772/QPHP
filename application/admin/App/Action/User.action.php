@@ -9,6 +9,7 @@ class UserAction extends CommonAction
         //$userData= $this->getUserId();
         //var_dump($userData);
 
+
         echo 'user hello';
         $model = new UserModel();
 

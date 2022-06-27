@@ -46,6 +46,11 @@ class QDbPdoPool implements IPdoPool
                     if (!isset(self::$instance[$key]) || count(self::$instance[$key]) < self::$num) {
                         self::$instance[$key][] = $mysql_conn->connect($val['MYSQL_HOST'], $val['MYSQL_PORT'], $val['MYSQL_DB'], $val['MYSQL_USER'], $val['MYSQL_PWD']);
                     } else {
+                        foreach (self::$instance[$key] as &$v){
+                            if(!$v){
+                                self::$instance[$key][] = $mysql_conn->connect($val['MYSQL_HOST'], $val['MYSQL_PORT'], $val['MYSQL_DB'], $val['MYSQL_USER'], $val['MYSQL_PWD']);
+                            }
+                        }
                         break;
                     }
                 }
@@ -58,6 +63,11 @@ class QDbPdoPool implements IPdoPool
                     if (!isset(self::$instance[$key]) || count(self::$instance[$key]) < self::$num) {
                         self::$instance[$key][] = $oracle_conn->connect($val['ORACLE_HOST'], $val['ORACLE_PORT'], $val['ORACLE_DB'], $val['ORACLE_USER'], $val['ORACLE_PWD']);
                     } else {
+                        foreach (self::$instance[$key] as &$v){
+                            if(!$v){
+                                self::$instance[$key][] = $oracle_conn->connect($val['ORACLE_HOST'], $val['ORACLE_PORT'], $val['ORACLE_DB'], $val['ORACLE_USER'], $val['ORACLE_PWD']);
+                            }
+                        }
                         break;
                     }
                 }

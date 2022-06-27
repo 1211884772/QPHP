@@ -9,11 +9,17 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+
+        //加载App/util/include
+        //加载Action|model|
+        spl_autoload_register(array($this,'load'));
+        //set_error_handler() 函数设置用户自定义的错误处理函数。
+        set_error_handler(array($this,'AppError'));
+        //set_exception_handler — 设置用户自定义的异常处理函数
+        set_exception_handler(array($this,'AppException'));
         //导入全局公共方法
-        $func = Lib.'/core/func/Func.class.php';
-        require_once $func;
         //导入全局所有配置
-        $this->requireConfig();
+        $this->requireConfig(Config::instance());
         /**
          * 总配置文件
          */
@@ -26,7 +32,7 @@ class QPHP
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
         if(ROUTE_PATH){
             //路由请求方式
-            $this->routeRequestMode();
+            $this->routeRequestMode(Route::instance());
         }elseif (RPC_RUN){
             //rpc请求方式
             $this->rpcRunRequestMode();
@@ -41,14 +47,8 @@ class QPHP
 
         //调用配置文件
         $this->init_config();
-        //加载App/util/include
-        //加载Action|model|
-        spl_autoload_register(array($this,'load'));
 
-        //set_error_handler() 函数设置用户自定义的错误处理函数。
-        set_error_handler(array($this,'AppError'));
-        //set_exception_handler — 设置用户自定义的异常处理函数
-        set_exception_handler(array($this,'AppException'));
+        //调用app控制器方法
         $actionObj = new $ACTION;//UserAction
         $actionObj->call($actionObj,$MOD);
     }
@@ -57,15 +57,10 @@ class QPHP
      * 加载全局核心路由文件
      * @throws Exception
      */
-    protected function routeRequestMode(){
+    protected function routeRequestMode(Route $route){
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
-        $conf = array(
-            'Route'=>Lib.'/core/route/Route.class.php',//路由文件
-        );
-        Func::requireFileDir($conf);
-        $route = Route::instance();
         $route->requireRouteFileUrl();
         $route->parsePath();
         $MODULE = $route->module?$route->module:'index';
@@ -132,13 +127,7 @@ class QPHP
      * 加载全局配置核心文件
      * @throws Exception
      */
-    protected function requireConfig(){
-        //导入路由配置
-        $conf = array(
-            'Config'=>Lib.'/core/config/Config.class.php',//路由文件
-        );
-        Func::requireFileDir($conf);
-        $conf = Config::instance();
+    protected function requireConfig(Config $conf){
         //导入全局所有配置
         $conf->requireConfigFileUrl(APP_PATH);
     }
@@ -148,8 +137,7 @@ class QPHP
      * 合并全局配置模块配置
      * @param $MODULE
      */
-    protected function requireConfigModule($MODULE){
-        $conf = Config::instance();
+    protected function requireConfigModule(Config $conf,$MODULE){
         //加载模块配置文件
         $conf->requireConfigModuleFileUrl(APP_PATH,$MODULE);
     }
@@ -210,7 +198,7 @@ class QPHP
         global $MODULE;
         //项目配置配置文件
         //总配置值和项目配置值的合并
-        $this->requireConfigModule($MODULE);
+        $this->requireConfigModule(Config::instance(),$MODULE);
         /**
          * 项目配置文件
          */
@@ -273,6 +261,9 @@ class QPHP
     private static function core_file(){
         global $MODULE;
         $_arr = array(
+            'Func'=>Lib.'/core/func/Func.class.php',//公共方法文件
+            'Config'=>Lib.'/core/config/Config.class.php',//配置文件
+            'Route'=>Lib.'/core/route/Route.class.php',//路由文件
             'IUserError'=>Lib.'/core/error/IUserError.interface.php',
             'UserError'=>Lib.'/core/error/UserError.class.php',
             'IExceptionError'=>Lib.'/core/exception/IExceptionError.interface.php',
