@@ -14,3 +14,19 @@ Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com/applicatio
 Unknown error on line 45 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
 Request the address: www.qphp.com/favicon.ico
 The wrong time: 2022-06-28 05:49:01
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com/application/favicon.ico/App/Util/include/global.php): failed to open stream: No such file or directory
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/favicon.ico
+The wrong time: 2022-06-28 06:03:16
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com/application/favicon.ico/App/Util/include/global.php): failed to open stream: No such file or directory
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/favicon.ico
+The wrong time: 2022-06-28 06:23:27
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com/application/favicon.ico/App/Util/include/global.php): failed to open stream: No such file or directory
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/favicon.ico
+The wrong time: 2022-06-28 06:30:02
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com/application/favicon.ico/App/Util/include/global.php): failed to open stream: No such file or directory
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/favicon.ico
+The wrong time: 2022-06-28 06:37:28

@@ -17,7 +17,6 @@ class QPHP
         set_error_handler(array($this,'AppError'));
         //set_exception_handler — 设置用户自定义的异常处理函数
         set_exception_handler(array($this,'AppException'));
-        //导入全局公共方法
         //导入全局所有配置
         $this->requireConfig(Config::instance());
         /**
@@ -251,6 +250,8 @@ class QPHP
             define('REDIS_HOST',$host);
             define('REDIS_PORT',$port);
         }
+
+        unset($conf);
     }
 
 

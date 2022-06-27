@@ -11,7 +11,6 @@ class UserModel extends Model
 
     public function getUser(){
 
-
         //$sql0="INSERT INTO q_user_01(id,name,pwd,create_time,updat_time) select * from q_user_01";
 
         //$data_2=$this->Db('mysql_2')->executeSql("query",$sql0);

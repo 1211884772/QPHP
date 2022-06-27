@@ -7,6 +7,7 @@ class QDbOracle extends QDbPdo
     protected $dbType = 'oracle';
     //数据库连接标识
     private $dbKey = 'oracle_0';
+    private $qdb_pdopool = "QDbPdoPool";//连接池类
     public function __construct($dbKey)
     {
         $this->dbKey = $dbKey;
@@ -20,7 +21,9 @@ class QDbOracle extends QDbPdo
      */
     protected function connect() {
         if($this->connectId == null) {
-            $this->connectId =$this->getConnect('QDbPdoPool', 'Connect',$this->dbKey,"oracle");
+            //TODO: 此处不符合，迪米特法则
+            //陌生的类QDbPdoPool最好不要以局部变量的形式出现在类的内部
+            $this->connectId =$this->getConnect($this->qdb_pdopool, 'Connect',$this->dbKey,$this->dbType);
         }
     }
 

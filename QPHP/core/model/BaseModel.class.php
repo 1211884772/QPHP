@@ -20,6 +20,8 @@ abstract class BaseModel implements IModel,IModelBase
     protected $echo_sql=false;
 
     protected $dbType = '';
+
+    private $qdb_factory = 'QDbFactory';
     public function __construct($dbType='mysql')
     {
         $this->dbType = $dbType;
@@ -67,7 +69,9 @@ abstract class BaseModel implements IModel,IModelBase
         $this->free();
         //表名
         $this->database=$database;
-        $this->db = QDbFactory::getDb($this->database,$this->dbType);
+        //TODO: 此处不符合，迪米特法则
+        //陌生的类QDbPdoPool最好不要以局部变量的形式出现在类的内部
+        $this->db = $this->qdb_factory::getDb($this->database,$this->dbType);
         return $this;
     }
 
