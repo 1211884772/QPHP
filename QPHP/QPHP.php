@@ -22,58 +22,14 @@ class QPHP
         define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
         if(ROUTE_PATH){
-            //导入路由配置
+            //路由请求方式
             $this->requireRoute();
-            $route = Route::instance();
-            $route->parsePath();
-
-            $MODULE = $route->module?$route->module:'index';
-            $ACTION=$route->action?$route->action:'IndexAction';
-            $MOD=$route->mod?$route->mod:'index';
-
         }elseif (RPC_RUN){
-            $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
-            $_arr=explode('/',$_REQUEST['argv_rpc']);
-            $MODULE= isset($_arr[0])&&!empty($_arr[0])?strtolower($_arr[0]):'index';
-            $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
-            $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
+            //rpc请求方式
+            $this->rpcRunRequestMode();
         }else{
-            //PHP $_REQUEST 用于收集HTML表单提交的数据
-            $_REQUEST['module'] = $GLOBALS['argv']['1'];
-            $_REQUEST['action'] = $GLOBALS['argv']['2'];
-            $_REQUEST['mod'] = $GLOBALS['argv']['3'];
-            $module = 'index';
-            if(isset($_SERVER['REQUEST_URI'])){
-                $url = $_SERVER['REQUEST_URI'];
-                if(strpos($url,'.php')!=false){
-                    $url = preg_replace("/\/\w*.php/","",$url);
-                }
-                if(strpos($url,'?')!==false){
-                    $url = preg_replace("/\?[\w=&]*/", "", $url);
-                }
-                $url = preg_replace("/^\//", "", $url);
-                $url = preg_replace("/\/$/", "", $url);
-                $_arr=explode('/',$url);
-                if(isset($_arr[0])&&!empty($_arr[0])){
-                    $module = $_arr[0];
-                }
-
-                if(isset($_arr[1])&&!empty($_arr[1])){
-                    $action = $_arr[1];
-                }
-
-                if(isset($_arr[2])&&!empty($_arr[2])){
-                    $mod = $_arr[2];
-                }
-
-            }
-
-            $module = isset($module)&&!empty($module)?strtolower($module):'index';
-            $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
-            $mod = isset($mod)&&!empty($mod)?$mod:'index';
-            $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
-            $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
-            $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
+            //默认请求方式
+            $this->defaultRequestMode();
         }
         $RESOURCE = APP_PATH . 'application/'.$MODULE.'/Resource';
         $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/include/global.php';
@@ -93,24 +49,91 @@ class QPHP
         $actionObj = new $ACTION;//UserAction
         $actionObj->call($actionObj,$MOD);
     }
-
     /**
-     * 加载路由配置文件
+     * 路由请求方式
+     * 加载全局核心路由文件
      * @throws Exception
      */
-    public function requireRoute(){
+    protected function requireRoute(){
+        global $MODULE;//模块名称
+        global $ACTION;//控制器名称
+        global $MOD;//方法名称
         $conf = array(
             'Route'=>Lib.'/core/route/Route.class.php',//路由文件
-            'RouteUrl'=>APP_PATH .'route'//前端路由文件
         );
         $this->requireFileDir($conf);
+        $route = Route::instance();
+        $route->requireRouteFileUrl();
+        $route->parsePath();
+        $MODULE = $route->module?$route->module:'index';
+        $ACTION=$route->action?$route->action:'IndexAction';
+        $MOD=$route->mod?$route->mod:'index';
+    }
+    /**
+     * rpc请求方式
+     */
+    protected function rpcRunRequestMode(){
+        global $MODULE;//模块名称
+        global $ACTION;//控制器名称
+        global $MOD;//方法名称
+        $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
+        $_arr=explode('/',$_REQUEST['argv_rpc']);
+        $MODULE= isset($_arr[0])&&!empty($_arr[0])?strtolower($_arr[0]):'index';
+        $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
+        $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
+    }
+    /**
+     * 核心默认请求方式
+     */
+    protected function defaultRequestMode(){
+        global $MODULE;//模块名称
+        global $ACTION;//控制器名称
+        global $MOD;//方法名称
+        //PHP $_REQUEST 用于收集HTML表单提交的数据
+        $_REQUEST['module'] = $GLOBALS['argv']['1'];
+        $_REQUEST['action'] = $GLOBALS['argv']['2'];
+        $_REQUEST['mod'] = $GLOBALS['argv']['3'];
+        $module = 'index';
+        if(isset($_SERVER['REQUEST_URI'])){
+            $url = $_SERVER['REQUEST_URI'];
+            if(strpos($url,'.php')!=false){
+                $url = preg_replace("/\/\w*.php/","",$url);
+            }
+            if(strpos($url,'?')!==false){
+                $url = preg_replace("/\?[\w=&]*/", "", $url);
+            }
+            $url = preg_replace("/^\//", "", $url);
+            $url = preg_replace("/\/$/", "", $url);
+            $_arr=explode('/',$url);
+            if(isset($_arr[0])&&!empty($_arr[0])){
+                $module = $_arr[0];
+            }
+
+            if(isset($_arr[1])&&!empty($_arr[1])){
+                $action = $_arr[1];
+            }
+
+            if(isset($_arr[2])&&!empty($_arr[2])){
+                $mod = $_arr[2];
+            }
+
+        }
+
+        $module = isset($module)&&!empty($module)?strtolower($module):'index';
+        $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
+        $mod = isset($mod)&&!empty($mod)?$mod:'index';
+        $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
+        $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
+        $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
     }
 
+
+
     /**
-     * 加载全局配置核心配置
+     * 加载全局配置核心文件
      * @throws Exception
      */
-    public function requireConfig(){
+    protected function requireConfig(){
         //导入路由配置
         $conf = array(
             'Config'=>Lib.'/core/config/Config.class.php',//路由文件
@@ -126,18 +149,20 @@ class QPHP
      * 合并全局配置模块配置
      * @param $MODULE
      */
-    public function requireConfigModule($MODULE){
+    protected function requireConfigModule($MODULE){
         $conf = Config::instance();
         //加载模块配置文件
         $conf->requireConfigModuleFileUrl(APP_PATH,$MODULE);
     }
+
+
 
     /**
      * 加载文件和目录下文件
      * @param array $conf
      * @throws Exception
      */
-    public function requireFileDir($conf=[]){
+    private function requireFileDir($conf=[]){
         foreach ($conf as $k=>$v){
             if(file_exists($v)){
                 if(is_file($v)){
@@ -157,7 +182,7 @@ class QPHP
      * 加载目录下所有文件
      * @param $dir
      */
-    function requireDir($dir)
+    private function requireDir($dir)
     {
         $handle = opendir($dir);//打开文件夹
         while (false !== ($file = readdir($handle))) {//读取文件
@@ -170,6 +195,7 @@ class QPHP
                     if(is_file($filepath)){
                         require_once ($filepath);//引入文件
                     }
+                    clearstatcache();
                 }
             }
         }

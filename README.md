@@ -20,6 +20,12 @@ $route->get('index/name','index/index/name');
 $route->post('index/name','index/index/addName');
 $route->put('index/name','index/index/putName');
 $route->delete('index/name','index/index/delName');
+或者
+Route::get('index/age','index/index/age');
+Route::get('index/name','index/index/name');
+Route::post('index/name','index/index/addName');
+Route::put('index/name','index/index/putName');
+Route::delete('index/name','index/index/delName');
 ```
 ##### 9.全局配置功能，模块配置功能 
 ###### 9.1.模块配置会自动覆盖全局配置的参数的数据
