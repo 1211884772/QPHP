@@ -14,13 +14,22 @@ class Model implements IModel
     public function __construct()
     {
         if(!empty($this->dbType)) {
-            if($this->dbType==='mysql'){
+            try{
+                $db_type = ucfirst($this->dbType);
+                $model_class = $db_type."M";
+                if(class_exists($model_class)){
+                    $this->interface_model = new $model_class($this->table,$this->key);
+                }
+            }catch (Exception $e){
+                throw $e;
+            }
+           /* if($this->dbType==='mysql'){
                 $this->interface_model=new MysqlModel($this->table,$this->key);
             }elseif ($this->dbType==='oracle') {
                 $this->interface_model=new OracleModel($this->table,$this->key);
             }else{
                 throw new Exception("Model type error");
-            }
+            }*/
         }else{
             throw new Exception("The model type is empty");
         }

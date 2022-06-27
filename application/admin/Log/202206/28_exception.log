@@ -11,3 +11,400 @@ Stack trace:
 #7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
 #8 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
 #9 {main}
+Code: 0 Message: syntax error, unexpected ')', expecting '|' or variable (T_VARIABLE)
+ParseError: syntax error, unexpected ')', expecting '|' or variable (T_VARIABLE) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:22
+Stack trace:
+#0 [internal function]: QPHP->load('Model')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(225): require_once('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('UserModel')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): spl_autoload_call('UserModel')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found Mysql1M
+Exception: Class not found Mysql1M in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('Mysql1M')
+#1 [internal function]: spl_autoload_call('Mysql1M')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('Mysql1M')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found MysqlM
+Exception: Class not found MysqlM in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:223
+Stack trace:
+#0 [internal function]: QPHP->load('MysqlM')
+#1 [internal function]: spl_autoload_call('MysqlM')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): class_exists('MysqlM')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(50): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}

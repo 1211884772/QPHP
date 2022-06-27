@@ -23,7 +23,7 @@ class QPHP
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
         if(ROUTE_PATH){
             //路由请求方式
-            $this->requireRoute();
+            $this->routeRequestMode();
         }elseif (RPC_RUN){
             //rpc请求方式
             $this->rpcRunRequestMode();
@@ -54,7 +54,7 @@ class QPHP
      * 加载全局核心路由文件
      * @throws Exception
      */
-    protected function requireRoute(){
+    protected function routeRequestMode(){
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
@@ -108,17 +108,13 @@ class QPHP
             if(isset($_arr[0])&&!empty($_arr[0])){
                 $module = $_arr[0];
             }
-
             if(isset($_arr[1])&&!empty($_arr[1])){
                 $action = $_arr[1];
             }
-
             if(isset($_arr[2])&&!empty($_arr[2])){
                 $mod = $_arr[2];
             }
-
         }
-
         $module = isset($module)&&!empty($module)?strtolower($module):'index';
         $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
         $mod = isset($mod)&&!empty($mod)?$mod:'index';
@@ -313,7 +309,7 @@ class QPHP
      * 动态加载核心文件
      * @return array
      */
-    public static function core_file(){
+    private static function core_file(){
         global $MODULE;
         $_arr = array(
             'IUserError'=>Lib.'/core/error/IUserError.interface.php',
@@ -336,12 +332,11 @@ class QPHP
             'IModel'=>Lib.'/core/model/IModel.interface.php',
             'IModelBase'=>Lib.'/core/model/IModelBase.interface.php',
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
-            'MysqlModel'=>Lib.'/core/model/MysqlModel.class.php',
-            'OracleModel'=>Lib.'/core/model/OracleModel.class.php',
+            'MysqlM'=>Lib.'/core/model/MysqlM.class.php',
+            'OracleM'=>Lib.'/core/model/OracleM.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
             'QRedis'=>Lib.'/core/cache/QRedis.class.php'
-
         );
         return $_arr;
     }

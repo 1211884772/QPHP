@@ -1,7 +1,7 @@
 <?php
 
 
-class MysqlModel extends BaseModel
+class MysqlM extends BaseModel
 {
     public function __construct($table,$key)
     {

@@ -1,7 +1,7 @@
 <?php
 
 
-class OracleModel extends BaseModel
+class OracleM extends BaseModel
 {
     public function __construct($table,$key)
     {
