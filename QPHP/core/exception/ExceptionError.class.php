@@ -1,7 +1,7 @@
 <?php
 
 
-class ExceptionError extends Exception
+class ExceptionError extends Exception implements IExceptionError
 {
 
 

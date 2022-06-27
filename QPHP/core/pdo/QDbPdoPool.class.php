@@ -1,7 +1,7 @@
 <?php
 
 
-class QDbPdoPool
+class QDbPdoPool implements IPdoPool
 {
     private static $instance=array();
     private static $num =10;

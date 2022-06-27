@@ -1,7 +1,7 @@
 <?php
 
 
-class QDbPdoMysqlConn
+class QDbPdoMysqlConn implements IPdoConn
 {
     //数据库类型
     private $dbType = 'mysql';

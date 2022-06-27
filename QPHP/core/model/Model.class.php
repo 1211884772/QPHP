@@ -3,7 +3,7 @@
 /**
  * Class Model类
  */
-class Model
+class Model implements IModel
 {
     public $table='';//数据表
     public $key='';//主键
@@ -29,7 +29,6 @@ class Model
     public function __destruct()
     {
         // TODO: Implement __destruct() method.
-        $this->model = null;
         $this->interface_model =null;
     }
 

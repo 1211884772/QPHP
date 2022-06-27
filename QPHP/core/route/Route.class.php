@@ -22,32 +22,32 @@ class Route
         $this->mod='';
 	}
 
-    public function get($rule, $route = '', array $option = [], array $pattern = []){
+    protected  function get($rule, $route = '', array $option = [], array $pattern = []){
         //'index/age','index/IndexAction/age
         $this->addRoute($rule, $route,'GET',$option , $pattern );
     }
 
-    public function post($rule, $route, array $option = [], array $pattern = []){
+    protected function post($rule, $route, array $option = [], array $pattern = []){
         //'index/age','index/IndexAction/age
         $this->addRoute($rule, $route,'POST',$option , $pattern );
     }
 
-    public function put($rule, $route = '', array $option = [], array $pattern = []){
+    protected function put($rule, $route = '', array $option = [], array $pattern = []){
         //'index/age','index/IndexAction/age
         $this->addRoute($rule, $route,'PUT',$option , $pattern );
     }
-    public function patch($rule, $route = '', array $option = [], array $pattern = []){
+    protected function patch($rule, $route = '', array $option = [], array $pattern = []){
         $this->addRoute($rule, $route,'PATCH',$option , $pattern );
     }
 
-    public function delete($rule, $route = '', array $option = [], array $pattern = []){
+    protected function delete($rule, $route = '', array $option = [], array $pattern = []){
         $this->addRoute($rule, $route,'DELETE',$option , $pattern );
     }
 
     /**
      * 解析出模型，控制器，方法
      */
-    public function parsePath(){
+    protected function parsePath(){
 
         $url = '';
         if(isset($_SERVER['REQUEST_URI'])) {
@@ -109,13 +109,15 @@ class Route
         $this->rules[$method][$rule] = $route;
     }
 
+
     public function __call($method, $parameters)
     {
-        return (new self())->$method(...$parameters);
+            return $this->$method(...$parameters);
     }
 
-    public static function __callStatic($method,$parameters){
-        return (new static())->$method(...$parameters);
-
+    public static function __callStatic($method, $parameters)
+    {
+        return (self::instance())->$method(...$parameters);
     }
+
 }

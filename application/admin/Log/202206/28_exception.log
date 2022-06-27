@@ -1,0 +1,13 @@
+Code: 0 Message: Argument 1 passed to QDbMysql::getConnect() must be an instance of IPdoPool, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php on line 25
+TypeError: Argument 1 passed to QDbMysql::getConnect() must be an instance of IPdoPool, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php on line 25 and defined in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:29
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(25): QDbMysql->getConnect('QDbPdoPool')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(208): QDbPdo->getRows('select * from (...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(194): BaseModel->executeSql('getRows', 'select * from (...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(21): Model->executeSql('getRows', 'select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): UserModel->getUser()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#9 {main}

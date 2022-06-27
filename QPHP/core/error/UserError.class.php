@@ -1,7 +1,7 @@
 <?php
 
 
-class UserError
+class UserError implements IUserError
 {
 
 	public function printError($MODULE,$errno, $errstr, $errfile, $errline){

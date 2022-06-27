@@ -1,7 +1,7 @@
 <?php
 
 
-class QDbPdoOracleConn
+class QDbPdoOracleConn implements IPdoConn
 {
     //数据库类型
     private $dbType = 'oracle';

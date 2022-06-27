@@ -1,8 +1,9 @@
 <?php
 // 接口
 //获取token
-$route = Route::instance();
-$route->get('admin/age','admin/index/age');
+//$route = Route::instance();
 
-$route->get('admin/name','admin/index/name');
+Route::get('admin/age','admin/index/age');
+
+Route::get('admin/name','admin/index/name');
 

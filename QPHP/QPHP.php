@@ -290,7 +290,9 @@ class QPHP
     public static function core_file(){
         global $MODULE;
         $_arr = array(
+            'IUserError'=>Lib.'/core/error/IUserError.interface.php',
             'UserError'=>Lib.'/core/error/UserError.class.php',
+            'IExceptionError'=>Lib.'/core/exception/IExceptionError.interface.php',
             'ExceptionError'=>Lib.'/core/exception/ExceptionError.class.php',
             'Action'=>Lib.'/core/action/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
@@ -299,11 +301,14 @@ class QPHP
             'QDbPdo'=> Lib.'/core/pdo/QDbPdo.class.php',
             'QDbMysql'=> Lib.'/core/pdo/QDbMysql.class.php',
             'QDbOracle'=> Lib.'/core/pdo/QDbOracle.class.php',
+            'IPdoConn'=>Lib.'/core/pdo/IPdoConn.interface.php',
             'QDbPdoOracleConn'=> Lib.'/core/pdo/QDbPdoOracleConn.class.php',
             'QDbPdoMysqlConn'=> Lib.'/core/pdo/QDbPdoMysqlConn.class.php',
+            'IPdoPool'=>Lib.'/core/pdo/IPdoPool.interface.php',
             'QDbPdoPool'=> Lib.'/core/pdo/QDbPdoPool.class.php',
             'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
             'IModel'=>Lib.'/core/model/IModel.interface.php',
+            'IModelBase'=>Lib.'/core/model/IModelBase.interface.php',
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
             'MysqlModel'=>Lib.'/core/model/MysqlModel.class.php',
             'OracleModel'=>Lib.'/core/model/OracleModel.class.php',

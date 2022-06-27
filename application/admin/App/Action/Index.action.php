@@ -20,12 +20,6 @@ class IndexAction extends CommonAction
             //throw new Exception('错误了',-1);
         }
 
-        $model = new QDbPdo();
-        $sql = 'select * from mm_user';
-        $arr = $model->getRows($sql);
-        echo '<pre>';
-        print_r($arr);
-
         $this->display('index/index.html',$data);
     }
 

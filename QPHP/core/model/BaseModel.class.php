@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class BaseModel implements IModel
+abstract class BaseModel implements IModel,IModelBase
 {
     protected $db =null;
     public $table='';//数据表
