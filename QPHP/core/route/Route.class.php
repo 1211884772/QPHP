@@ -9,6 +9,7 @@ class Route
     protected $mod='';//方法名称
 
     private static $ins=null;
+    private $func = "Func";//公共方法类
     public static function instance(){
         if(!self::$ins||!(self::$ins instanceof self)){
             self::$ins = new self();
@@ -34,7 +35,7 @@ class Route
         $conf = array(
             'RouteUrl'=>APP_PATH .'route'//前端路由文件
         );
-        Func::requireFileDir($conf);
+        $this->func::requireFileDir($conf);
     }
 
     protected  function get($rule, $route = '', array $option = [], array $pattern = []){

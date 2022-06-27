@@ -5,10 +5,18 @@ class Action
 {
 
     public $input;
-    //前置执行
-    public function before(){
+
+    public function __construct()
+    {
+        //TODO: 此处不符合，迪米特法则
+        //陌生的类QDbPdoPool最好不要以局部变量的形式出现在类的内部
         $input = new Input();
         $this->input = $input->parse();
+    }
+
+    //前置执行
+    public function before(){
+
     }
 
     //后置执行

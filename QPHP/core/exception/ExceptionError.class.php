@@ -3,9 +3,6 @@
 
 class ExceptionError extends Exception implements IExceptionError
 {
-
-
-
     //输出异常
     public function printException($MODULE,$exception){
 

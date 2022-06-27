@@ -2,14 +2,11 @@
 
 class QPHP
 {
-    //框架的运行方法
-    public function run(){
-        //===================================
-        global $RESOURCE;//定义我们的项目资源目录常量
-        global $MODULE;//模块名称
-        global $ACTION;//控制器名称
-        global $MOD;//方法名称
+    private $user_error = null;
+    private $exception_error =null;
 
+    public function __construct()
+    {
         //加载App/util/include
         //加载Action|model|
         spl_autoload_register(array($this,'load'));
@@ -17,6 +14,17 @@ class QPHP
         set_error_handler(array($this,'AppError'));
         //set_exception_handler — 设置用户自定义的异常处理函数
         set_exception_handler(array($this,'AppException'));
+        $this->user_error = new UserError();
+        $this->exception_error = new ExceptionError();
+    }
+
+    //框架的运行方法
+    public function run(){
+        //===================================
+        global $RESOURCE;//定义我们的项目资源目录常量
+        global $MODULE;//模块名称
+        global $ACTION;//控制器名称
+        global $MOD;//方法名称
         //导入全局所有配置
         $this->requireConfig(Config::instance());
         /**
@@ -25,7 +33,6 @@ class QPHP
         if (!defined('QPHP_CONFIG')){
             throw new Exception("The global configuration file does not exist");
         }
-
         define('RPC_RUN',isset(QPHP_CONFIG['RPC_RUN'])?QPHP_CONFIG['RPC_RUN']:false);//是否开启rpc
         define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
@@ -40,13 +47,11 @@ class QPHP
             $this->defaultRequestMode();
         }
         $RESOURCE = APP_PATH . 'application/'.$MODULE.'/Resource';
+        //TODO：此处待优化
         $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/include/global.php';
         require_once $gloabal;
-
-
         //调用配置文件
         $this->init_config();
-
         //调用app控制器方法
         $actionObj = new $ACTION;//UserAction
         $actionObj->call($actionObj,$MOD);
@@ -177,18 +182,16 @@ class QPHP
     //输出错误日志
     public function AppError($errno, $errstr, $errfile, $errline){
         global $MODULE;//模块名称
-		$error_obj = new UserError();
         $module = $MODULE;
-		$error_obj->printError($module,$errno, $errstr, $errfile, $errline);
+        $this->user_error->printError($module,$errno, $errstr, $errfile, $errline);
         return true;
     }
 
     //输出异常
     public function AppException($exception){
         global $MODULE;
-		$exception_obj = new ExceptionError();
         $module = $MODULE;
-		$exception_obj->printException($module,$exception);
+        $this->exception_error->printException($module,$exception);
 		return true;
     }
 
@@ -206,7 +209,6 @@ class QPHP
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
         extract(constant($conf));
-
         $conf_arr =[];
         for ($i=0;$i<100;$i++){
             $db= "mysql_".$i;
@@ -238,19 +240,16 @@ class QPHP
         }
         define('ORACLE_POOL',$conf_arr);
         $conf_arr=[];
-
         if(isset($mem)){
             extract($mem);
             define('MEM_HOST',$host);
             define('MEM_PORT',$port);
         }
-
         if(isset($redis)){
             extract($redis);
             define('REDIS_HOST',$host);
             define('REDIS_PORT',$port);
         }
-
         unset($conf);
     }
 

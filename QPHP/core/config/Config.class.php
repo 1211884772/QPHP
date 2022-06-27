@@ -20,13 +20,13 @@ class Config
         $this->configFileUrls = [];
     }
 
-    public function setConfigs($APP_PATH){
+    private function setConfigs($APP_PATH){
         $this->configs=array(
             'ConfigUrl'=>$APP_PATH .'config'//全局配置文件
         );
     }
 
-    public function setConfigModules($APP_PATH,$MODULE){
+    private function setConfigModules($APP_PATH,$MODULE){
         $this->configModules=array(
             'ConfigModuleUrl'=>$APP_PATH.'application/'.$MODULE.'/Config'//项目配置配置文件
         );
@@ -80,7 +80,7 @@ class Config
      * @param array $conf
      * @throws Exception
      */
-    public function requireFileDir($conf=[]){
+    private function requireFileDir($conf=[]){
         foreach ($conf as $k=>$v){
             if(file_exists($v)){
                 if(is_file($v)){
@@ -100,7 +100,7 @@ class Config
      * 加载目录下所有文件
      * @param $dir
      */
-    function requireDir($dir)
+    private function requireDir($dir)
     {
         $handle = opendir($dir);//打开文件夹
         while (false !== ($file = readdir($handle))) {//读取文件
@@ -125,7 +125,7 @@ class Config
      * @param $arr2
      * @return array
      */
-    public function arrayMerge(&$arr1, &$arr2){
+    private function arrayMerge(&$arr1, &$arr2){
         if(empty($arr1)){
             $arr1 = array_merge_recursive([], $arr2);
             return $arr1;
