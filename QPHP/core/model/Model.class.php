@@ -17,7 +17,7 @@ class Model implements IModel
         $this->setFactory(new ModelFactory());
     }
 
-    protected function setFactory(ModelFactory $modelFactory){
+    private function setFactory(ModelFactory $modelFactory){
         $this->model_factory = $modelFactory;
         $this->interface_model=$this->model_factory->createModel($this->dbType,$this->table,$this->key);
     }
@@ -26,6 +26,7 @@ class Model implements IModel
     {
         // TODO: Implement __destruct() method.
         $this->interface_model =null;
+        $this->model_factory =null;
     }
 
 
