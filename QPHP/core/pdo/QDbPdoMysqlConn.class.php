@@ -28,6 +28,5 @@ class QDbPdoMysqlConn implements IPdoConn
         }catch (Exception $e){
             throw new Exception("PDO CONNECT ERROR:".$e->getMessage());
         }
-
     }
 }

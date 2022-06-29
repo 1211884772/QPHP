@@ -1,0 +1,49 @@
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui'
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(71): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui'
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(72): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1248 Every derived table must have its own alias
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1248 Every derived table must have its own alias in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(72): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to undefined method MysqlModel::findOne()
+Error: Call to undefined method MysqlModel::findOne() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:44
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#3 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=10' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=10' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(115): PDO->exec('delete from mm_...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(90): QDbPdo->query('delete from mm_...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(153): QDbMysql->delete('delete from mm_...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(194): BaseModel->executeSql('delete')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(137): MysqlModel->delete()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->del()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'del')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#8 {main}

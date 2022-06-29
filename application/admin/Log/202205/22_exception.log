@@ -1,0 +1,44 @@
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"mm_user" ("username","age","pwd","address") VALUES('123123','12312','12312','12' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"mm_user" ("username","age","pwd","address") VALUES('123123','12312','12312','12' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php:116
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(116): PDO->exec('INSERT INTO "mm...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(239): QDbPdo->query('INSERT INTO "mm...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\MysqlModel.class.php(60): QDbPdo->insert('mm_user', Array)
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(53): MysqlModel->add(Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->add()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'add')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#7 {main}
+Code: 22003 Message: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1
+PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(115): PDO->exec('INSERT INTO mm_...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbMysql.class.php(55): QDbPdo->query('INSERT INTO mm_...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\MysqlModel.class.php(60): QDbMysql->insert('mm_user', Array)
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(53): MysqlModel->add(Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->add()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'add')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#7 {main}
+Code: 22003 Message: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1
+PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(115): PDO->exec('INSERT INTO mm_...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbMysql.class.php(55): QDbPdo->query('INSERT INTO mm_...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\MysqlModel.class.php(60): QDbMysql->insert('mm_user', Array)
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(53): MysqlModel->add(Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->add()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'add')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#7 {main}
+Code: 22003 Message: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1
+PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(115): PDO->exec('INSERT INTO mm_...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbMysql.class.php(56): QDbPdo->query('INSERT INTO mm_...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\MysqlModel.class.php(60): QDbMysql->insert('mm_user', Array)
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(53): MysqlModel->add(Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->add()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'add')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#7 {main}

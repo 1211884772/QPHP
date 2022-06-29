@@ -9,10 +9,13 @@ return array(
     'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     'cbedd1c43698b6479c511903c3cb9bb6' => $vendorDir . '/toolkit/stdlib/src/func.php',
     '27d2fef43c99e9d4ddee278ed83bed25' => $vendorDir . '/hprose/hprose-php/src/Hprose.php',
+<<<<<<< HEAD
     'd9866e0221042caf606054fb50927c01' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Collectable.php',
     '677529945d07a2de2637d5cdc8398d99' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Threaded.php',
     '0bbb839eba3d984b21b43e36a48834d0' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Volatile.php',
     'fd1fa402b2b6879be2be1d02be41db17' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Thread.php',
     'a02f3a2fa658f9664996931da18dbd6b' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Worker.php',
     'b7a27ae8f251b35a05fad3279d7a78bf' => $vendorDir . '/krakjoe/pthreads-polyfill/src/Pool.php',
+=======
+>>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
 );

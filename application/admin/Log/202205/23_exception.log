@@ -1,0 +1,8 @@
+Code: 0 Message: Too few arguments to function MysqlModel::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php on line 13 and exactly 2 expected
+ArgumentCountError: Too few arguments to function MysqlModel::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php on line 13 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php:6
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): MysqlModel->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#4 {main}

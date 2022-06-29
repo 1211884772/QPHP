@@ -265,6 +265,7 @@
             "install-path": "../inhere/php-validate"
         },
         {
+<<<<<<< HEAD
             "name": "krakjoe/pthreads-polyfill",
             "version": "dev-master",
             "version_normalized": "dev-master",
@@ -319,6 +320,8 @@
             "install-path": "../krakjoe/pthreads-polyfill"
         },
         {
+=======
+>>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
             "name": "symfony/polyfill-php80",
             "version": "dev-main",
             "version_normalized": "dev-main",

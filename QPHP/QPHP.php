@@ -13,7 +13,8 @@ class QPHP
         return self::$ins;
     }
 
-    private function __construct()
+
+    public function __construct()
     {
         //加载App/util/include
         //加载Action|model|
@@ -28,7 +29,6 @@ class QPHP
 
     //框架的运行方法
     public function run(){
-        //echo 2222222222;exit;
         //===================================
         global $RESOURCE;//定义我们的项目资源目录常量
         global $MODULE;//模块名称

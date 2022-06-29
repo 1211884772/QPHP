@@ -1,0 +1,24 @@
+Unknown error type: [2] require(D:\phpstudy_pro\WWW\www.qphp.com/application/admin/App/Util/include/UserAction.php): failed to open stream: No such file or directory
+Unknown error on line 51 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/admin/user/index/
+The wrong time: 2022-05-13 00:24:04
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php:25)
+Unknown error on line 7 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Util\include\Json.util.php
+Request the address: www.qphp.com/admin/login/getUserId/?username=mumu&password=123456
+The wrong time: 2022-05-13 01:57:41
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php:25)
+Unknown error on line 7 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Util\include\Json.util.php
+Request the address: www.qphp.com/admin/login/getUserId/?username=mumu&password=123456
+The wrong time: 2022-05-13 02:00:54
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php:25)
+Unknown error on line 7 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Util\include\Json.util.php
+Request the address: www.qphp.com/admin/login/getUserId/?username=mumu&password=123456
+The wrong time: 2022-05-13 02:04:42
+Unknown error type: [8] Undefined index: HTTP_X_TOKEN
+Unknown error on line 25 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php
+Request the address: www.qphp.com/admin/login/getUserId/?username=mumu&password=123456
+The wrong time: 2022-05-13 02:05:32
+Unknown error type: [8] Undefined index: HTTP_X_TOKEN
+Unknown error on line 25 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php
+Request the address: www.qphp.com/admin/login/getUserId/?username=mumu&password=123456
+The wrong time: 2022-05-13 02:08:03

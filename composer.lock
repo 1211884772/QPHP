@@ -259,6 +259,7 @@
             "time": "2021-11-19T02:11:26+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "krakjoe/pthreads-polyfill",
             "version": "dev-master",
             "source": {
@@ -310,6 +311,8 @@
             "time": "2016-11-17T14:48:36+00:00"
         },
         {
+=======
+>>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
             "name": "symfony/polyfill-php80",
             "version": "dev-main",
             "source": {
@@ -458,8 +461,12 @@
     "stability-flags": {
         "hprose/hprose-php": 20,
         "firebase/php-jwt": 20,
+<<<<<<< HEAD
         "inhere/php-validate": 20,
         "krakjoe/pthreads-polyfill": 20
+=======
+        "inhere/php-validate": 20
+>>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -1,0 +1,48 @@
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=8' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=8' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(115): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(73): QDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(184): QDbMysql->update('UPDATE mm_user ...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(169): BaseModel->executeSql('update')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(119): MysqlModel->update(Array)
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->edit()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(24): Action->call(Object(UserAction), 'edit')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(72): QPHP->run()
+#8 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(115): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(73): QDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(184): QDbMysql->update('UPDATE mm_user ...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(169): BaseModel->executeSql('update')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(119): MysqlModel->update(Array)
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->edit()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(24): Action->call(Object(UserAction), 'edit')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(72): QPHP->run()
+#8 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(115): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(73): QDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(184): QDbMysql->update('UPDATE mm_user ...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(169): BaseModel->executeSql('update')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(119): MysqlModel->update(Array)
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->edit()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(24): Action->call(Object(UserAction), 'edit')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(72): QPHP->run()
+#8 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(115): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(73): QDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(184): QDbMysql->update('UPDATE mm_user ...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(170): BaseModel->executeSql('update')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(119): MysqlModel->update(Array)
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->edit()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(24): Action->call(Object(UserAction), 'edit')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(72): QPHP->run()
+#8 {main}

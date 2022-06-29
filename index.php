@@ -23,4 +23,3 @@ require_once Lib . '/QPHP.php';
 //$pool->shutdown();
 QPHP::instance()->run();
 $app = null;
-

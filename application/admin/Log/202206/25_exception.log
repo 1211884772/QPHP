@@ -1,0 +1,187 @@
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.collect' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:184
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(184): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(203): QDbPdo->getRows('select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUser()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
