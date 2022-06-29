@@ -10,58 +10,55 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'cbedd1c43698b6479c511903c3cb9bb6' => __DIR__ . '/..' . '/toolkit/stdlib/src/func.php',
         '27d2fef43c99e9d4ddee278ed83bed25' => __DIR__ . '/..' . '/hprose/hprose-php/src/Hprose.php',
-<<<<<<< HEAD
         'd9866e0221042caf606054fb50927c01' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Collectable.php',
         '677529945d07a2de2637d5cdc8398d99' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Threaded.php',
         '0bbb839eba3d984b21b43e36a48834d0' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Volatile.php',
         'fd1fa402b2b6879be2be1d02be41db17' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Thread.php',
         'a02f3a2fa658f9664996931da18dbd6b' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Worker.php',
         'b7a27ae8f251b35a05fad3279d7a78bf' => __DIR__ . '/..' . '/krakjoe/pthreads-polyfill/src/Pool.php',
-=======
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
     );
 
     public static $prefixLengthsPsr4 = array (
-        'd' => 
+        'd' =>
         array (
             'dekuan\\' => 7,
         ),
-        'T' => 
+        'T' =>
         array (
             'Toolkit\\Stdlib\\' => 15,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
         ),
-        'I' => 
+        'I' =>
         array (
             'Inhere\\Validate\\' => 16,
         ),
-        'F' => 
+        'F' =>
         array (
             'Firebase\\JWT\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'dekuan\\' => 
+        'dekuan\\' =>
         array (
             0 => __DIR__ . '/..' . '/dekuan/dedid/src',
         ),
-        'Toolkit\\Stdlib\\' => 
+        'Toolkit\\Stdlib\\' =>
         array (
             0 => __DIR__ . '/..' . '/toolkit/stdlib/src',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Inhere\\Validate\\' => 
+        'Inhere\\Validate\\' =>
         array (
             0 => __DIR__ . '/..' . '/inhere/php-validate/src',
         ),
-        'Firebase\\JWT\\' => 
+        'Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),

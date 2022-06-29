@@ -1,0 +1,16 @@
+Code: 0 Message: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)
+ParseError: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:6
+Stack trace:
+#0 [internal function]: QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(65): spl_autoload_call('UserAction')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(24): QPHP->run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)
+ParseError: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:12
+Stack trace:
+#0 [internal function]: QPHP->load('UserModel')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(28): spl_autoload_call('UserModel')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(29): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(66): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(24): QPHP->run()
+#5 {main}

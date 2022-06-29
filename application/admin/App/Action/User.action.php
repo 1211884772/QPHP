@@ -3,7 +3,6 @@
 
 class UserAction extends CommonAction
 {
-<<<<<<< HEAD
 
 //    public function getUser01(){
 //        $model = new UserModel();
@@ -17,8 +16,7 @@ class UserAction extends CommonAction
 //        $model = new UserModel();
 //        return $this->getUser03();
 //    }
-=======
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
+
     public function index(){
 
         //获取登录用户id
@@ -28,8 +26,6 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
-
-<<<<<<< HEAD
  //       $th1=new Thread();//10个线程
         //$th2=new Thread();//10个线程
         //$th3=new Thread();//10个线程
@@ -52,8 +48,6 @@ class UserAction extends CommonAction
 
         $datas=[];
         $data=[];
-=======
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
         $datas = $model->getUser();
         echo '<pre>';
         print_r($datas);
@@ -66,26 +60,16 @@ class UserAction extends CommonAction
         print_r($data_count);
 
         echo "==========================";
-<<<<<<< HEAD
 
         //$model = new UserModel();
    /*     $arr2 = $model->Db('mysql_1')->table('mm_user')->asTable('u')
-=======
-       // $arr2 = $model->model->table('mm_user')->key('id')->find(1);
-        $model = new UserModel();
-        $arr2 = $model->Db('mysql_1')->table('mm_user')->asTable('u')
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
             ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
             ->leftJoin('mm_address  a on a.user_id =u.id')
             ->where('u.id = 1')
             ->find();
         echo '<pre>';
-<<<<<<< HEAD
         print_r($arr2);*/
-=======
-        print_r($arr2);
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
 
         $data_u['data_s']=$datas;
         $data_u['data']=$data;
