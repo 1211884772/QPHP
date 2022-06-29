@@ -11,28 +11,15 @@ class Model implements IModel
     protected $dbType='mysql';
 
     private $interface_model = null;
+    private $model_factory =null;
     public function __construct()
     {
-        if(!empty($this->dbType)) {
-            try{
-                $db_type = ucfirst($this->dbType);
-                $model_class = $db_type."M";
-                if(class_exists($model_class)){
-                    $this->interface_model = new $model_class($this->table,$this->key);
-                }
-            }catch (Exception $e){
-                throw $e;
-            }
-           /* if($this->dbType==='mysql'){
-                $this->interface_model=new MysqlModel($this->table,$this->key);
-            }elseif ($this->dbType==='oracle') {
-                $this->interface_model=new OracleModel($this->table,$this->key);
-            }else{
-                throw new Exception("Model type error");
-            }*/
-        }else{
-            throw new Exception("The model type is empty");
-        }
+        $this->setFactory(new ModelFactory());
+    }
+
+    protected function setFactory(ModelFactory $modelFactory){
+        $this->model_factory = $modelFactory;
+        $this->interface_model=$this->model_factory->createModel($this->dbType,$this->table,$this->key);
     }
 
     public function __destruct()

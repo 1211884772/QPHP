@@ -1,0 +1,4 @@
+Unknown error type: [8] Undefined property: ModelFactory::$table
+Unknown error on line 12 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php
+Request the address: www.qphp.com/admin/user/index?id=1
+The wrong time: 2022-06-30 03:00:40

@@ -1,0 +1,11 @@
+Code: 0 Message: Class not found ModelFactory
+Exception: Class not found ModelFactory in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:185
+Stack trace:
+#0 [internal function]: QPHP->load('ModelFactory')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(17): spl_autoload_call('ModelFactory')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(14): Model->__construct()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(28): UserModel->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(29): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(66): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(24): QPHP->run()
+#7 {main}
