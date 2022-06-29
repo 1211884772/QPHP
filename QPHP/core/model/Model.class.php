@@ -17,7 +17,7 @@ class Model implements IModel
         $this->setFactory(new ModelFactory());
     }
 
-    private function setFactory(ModelFactory $modelFactory){
+    private function setFactory(IModelFactory $modelFactory){
         $this->model_factory = $modelFactory;
         $this->interface_model=$this->model_factory->createModel($this->dbType,$this->table,$this->key);
     }

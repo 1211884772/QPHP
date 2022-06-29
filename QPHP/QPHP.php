@@ -295,6 +295,7 @@ class QPHP
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
             'MysqlM'=>Lib.'/core/model/MysqlM.class.php',
             'OracleM'=>Lib.'/core/model/OracleM.class.php',
+            'IModelFactory'=>Lib.'/core/model/IModelFactory.interface.php',
             'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
