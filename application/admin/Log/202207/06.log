@@ -1,0 +1,4 @@
+Unknown error type: [2] Use of undefined constant t2 - assumed 't2' (this will throw an Error in a future version of PHP)
+Unknown error on line 32 in file D:\phpstudy_pro\WWW\www.qphp.com\index.php
+Request the address: www.qphp.com/admin/user/index/
+The wrong time: 2022-07-06 18:52:39

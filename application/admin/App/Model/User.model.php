@@ -24,24 +24,27 @@ class UserModel extends Model
         $data = [];
         //第二页 id<35 //分页由前端做，一次性返回多条数据
 
-        //$data = array_merge($data_1,$data_2,$data_3);
-        //$sort_c = array_column($data,'create_time');
-       // $sort_u = array_column($data,'updat_time');
-        //array_multisort($sort_c, SORT_DESC,SORT_NUMERIC,$sort_u,SORT_DESC,SORT_NUMERIC,$data);
+        $data_1 = $this->getUser01();
+        $data_2 = $this->getUser01();
+        $data_3 = $this->getUser01();
+        $data = array_merge($data_1,$data_2,$data_3);
+        $sort_c = array_column($data,'create_time');
+        $sort_u = array_column($data,'updat_time');
+        array_multisort($sort_c, SORT_DESC,SORT_NUMERIC,$sort_u,SORT_DESC,SORT_NUMERIC,$data);
 
         return $data;
     }
 
 
     public function getUser01(){
-        return array("1","2","3");
+        //return array("1","2","3");
         //第二页 id<35 //分页由前端做，一次性返回多条数据
 
-//        $sql1="select * from ((select * from q_user_01 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_02 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_03 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_04 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_05 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_06 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_07 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_08 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_09 where id<1162922  ORDER BY create_time desc limit 10)UNION ALL (select * from q_user_10 where id<1162922 ORDER BY create_time desc limit 10)) as u
-//where u.id<1162922 ORDER BY u.create_time desc limit 10";
-//        $this->getLastSql();
-//        $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
-//        return $data_1;
+        $sql1="select * from ((select * from q_user_01 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_02 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_03 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_04 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_05 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_06 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_07 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_08 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_09 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_10 where id<1162922 ORDER BY id desc limit 10)) as u
+where u.id<1162922 ORDER BY u.create_time desc limit 10";
+        $this->getLastSql();
+        $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
+        return $data_1;
     }
     public function getUser02(){
        //return array("4","5","6");
