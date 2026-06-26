@@ -1,0 +1,10 @@
+Code: 0 Message: Cannot assign QPHP\core\model\mysql\MysqlM to property QPHP\core\model\Model::$interface_model of type QPHP\core\model\oracle\OracleM|QPHP\core\model\MysqlM|null
+TypeError: Cannot assign QPHP\core\model\mysql\MysqlM to property QPHP\core\model\Model::$interface_model of type QPHP\core\model\oracle\OracleM|QPHP\core\model\MysqlM|null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:38
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(73): QPHP\core\model\Model->getInstance()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(148): QPHP\core\model\Model->Db()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->view()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}

@@ -2,7 +2,8 @@
 #### 计划：
 #### 1.C语言实现php连接池功能，php扩展形式
 #### 2.php多线程的实现
-
+#### 3.压测，线程数为10
+![yace01.png](yace01.png)
 ### 开发功能：
 ##### 1.qphp是一个轻量级的phpmvc框架，支持多语言，mysql,oracle,memcache,redis
 ##### 框架执行时间：6毫秒,thinkphp执行时间：19毫秒

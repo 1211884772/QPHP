@@ -3,6 +3,8 @@ namespace QPHP\core\cache\redis;
 
 
 use Exception;
+use QPHP\core\cache\memcache\MmCache;
+use QPHP\core\container\Container;
 
 class R
 {
@@ -25,8 +27,9 @@ class R
      * @throws Exception
      */
     protected function getRedis(){
-        $redis = new QRedis(REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]);
-        return $redis;
+//        $redis = new QRedis(REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]);
+//        return $redis;
+        return Container::getInstance()->makeWith(QRedis::class, [REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]]);
     }
 
 

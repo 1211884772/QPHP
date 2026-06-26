@@ -8,7 +8,7 @@ use QPHP\core\pdo\oracle\QDbOracle;
 
 class QDbFactory
 {
-    static private $qdb=[];
+    private static  $qdb=[];
 
     /**
      * @throws Exception

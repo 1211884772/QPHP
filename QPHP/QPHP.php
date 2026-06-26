@@ -2,11 +2,16 @@
 namespace QPHP;
 
 use Exception;
+use QPHP\core\cache\memcache\MmCache;
+use QPHP\core\cache\redis\QRedis;
 use QPHP\core\config\Config;
 use QPHP\core\lang\Lang;
 use QPHP\core\logger\error\UserError;
 use QPHP\core\logger\exception\ExceptionError;
+use QPHP\core\model\intf\IModelFactory;
+use QPHP\core\model\ModelFactory;
 use QPHP\core\route\Route;
+use QPHP\core\container\Container;
 
 class QPHP
 {
@@ -33,9 +38,31 @@ class QPHP
         set_error_handler(array($this,'AppError'));
         //set_exception_handler — 设置用户自定义的异常处理函数
         set_exception_handler(array($this,'AppException'));
+        // 1. 获取全局容器实例
+        $container = $this->initContainer();
 
-        $this->user_error = new UserError();
-        $this->exception_error = new ExceptionError();
+        // 2. 绑定全局单例服务（工厂、日志）
+        $this->user_error =$container->make(UserError::class);
+        $this->exception_error=$container->make(ExceptionError::class);
+
+    }
+
+    /**
+     * 初始化DI容器
+     * @return Container
+     */
+    private function initContainer(): Container
+    {
+        // 1. 获取全局容器实例
+        $container = Container::getInstance();
+        // 2. 绑定全局单例服务（工厂、日志）
+        $container->singleton(UserError::class, UserError::class);
+        $container->singleton(ExceptionError::class, ExceptionError::class);
+        $container->singleton(QRedis::class, QRedis::class);
+        $container->singleton(MmCache::class, MmCache::class);
+        $container->singleton(IModelFactory::class, ModelFactory::class);
+
+        return $container;
     }
 
     //框架的运行方法
@@ -104,10 +131,27 @@ class QPHP
         $action=$MODULE.'\\Action\\'.$ACTION;
         //var_dump($action) ;
         //var_dump ($MOD);
-        $actionObj = new $action;//UserAction
+        // $actionObj = new $action;//UserAction
 
-        $actionObj->call($actionObj,$MOD);
+        // $actionObj->call($actionObj,$MOD);
+        // 1. 获取全局容器实例
+        $container = Container::getInstance();
 
+        // 2. 绑定全局单例服务（工厂、日志）
+//        $container->singleton(UserError::class, UserError::class);
+//        $container->singleton(ExceptionError::class, ExceptionError::class);
+
+//        $container->singleton(MysqlFactory::class, MysqlFactory::class);
+//        $container->singleton(OracleFactory::class, OracleFactory::class);
+//        $container->singleton(Log::class, Log::class);
+//        $container->singleton(ExceptionLog::class, ExceptionLog::class);
+
+        // ========== 核心：容器创建控制器实例，自动注入所有构造依赖 ==========
+        // 不需要手动 new $ctrlClass，容器自动解析构造函数参数
+        $controller = $container->make($action);
+        // 3. 调用控制器方法执行业务
+        //$controller->$MOD();
+        $controller->call($controller,$MOD);
         //删除允许跨域
         Route::instance()->prohibitCrossDomain();
     }
@@ -517,6 +561,7 @@ class QPHP
             'Func'=>Lib.'/core/func/Func.class.php',//公共方法文件
             'Config'=>Lib.'/core/config/Config.class.php',//配置文件
             'Route'=>Lib.'/core/route/Route.class.php',//路由文件
+            'Container'=>Lib.'/core/container/Container.class.php',//DI容器
 
 //            'IUserError'=>Lib.'/core/error/IUserError.interface.php',
 //            'UserError'=>Lib.'/core/error/UserError.class.php',

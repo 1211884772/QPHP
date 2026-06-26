@@ -1,0 +1,50 @@
+Code: 0 Message: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction
+RuntimeException: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:301
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction
+RuntimeException: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:301
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction
+RuntimeException: 反射解析类 admin\Action\UserAction 失败：Access to non-public constructor of class admin\Action\UserAction in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:301
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: QPHP\core\pdo\abs\QDbPdo::getRow(): Return value must be of type array, bool returned
+TypeError: QPHP\core\pdo\abs\QDbPdo::getRow(): Return value must be of type array, bool returned in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:183
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\abs\QDbPdo->getRow()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(186): call_user_func_array()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(147): QPHP\core\model\abs\BaseModel->executeSql()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(155): QPHP\core\model\mysql\MysqlM->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(154): QPHP\core\model\Model->find()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->view()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: QPHP\core\pdo\abs\QDbPdo::getRow(): Return value must be of type array, bool returned
+TypeError: QPHP\core\pdo\abs\QDbPdo::getRow(): Return value must be of type array, bool returned in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:183
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\abs\QDbPdo->getRow()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(186): call_user_func_array()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(147): QPHP\core\model\abs\BaseModel->executeSql()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(155): QPHP\core\model\mysql\MysqlM->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(154): QPHP\core\model\Model->find()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->view()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#9 {main}

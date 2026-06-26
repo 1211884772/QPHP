@@ -1,0 +1,8 @@
+Unknown error type: [2] Undefined property: admin\Action\UserAction::$model
+Unknown error on line 147 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php
+Request the address: www.qphp.com:8080/admin/user/view?id=1
+The wrong time: 2026-06-26 06:20:16
+Unknown error type: [2] Undefined property: admin\Action\UserAction::$model
+Unknown error on line 147 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php
+Request the address: www.qphp.com:8080/admin/user/view?id=1
+The wrong time: 2026-06-26 06:20:17

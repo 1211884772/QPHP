@@ -1,0 +1,64 @@
+Code: 0 Message: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入
+RuntimeException: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:285
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(21): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(43): QPHP\core\model\ModelFactory->createModel()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(29): QPHP\core\model\Model->getInstance()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(16): admin\Model\UserModel->__construct()
+#6 [internal function]: admin\Action\UserAction->__construct()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(298): ReflectionClass->newInstanceArgs()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#12 {main}
+Code: 0 Message: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入
+RuntimeException: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:285
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(21): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(43): QPHP\core\model\ModelFactory->createModel()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(29): QPHP\core\model\Model->getInstance()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(16): admin\Model\UserModel->__construct()
+#6 [internal function]: admin\Action\UserAction->__construct()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(298): ReflectionClass->newInstanceArgs()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#12 {main}
+Code: 0 Message: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入
+RuntimeException: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:285
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(21): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(43): QPHP\core\model\ModelFactory->createModel()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(29): QPHP\core\model\Model->getInstance()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(16): admin\Model\UserModel->__construct()
+#6 [internal function]: admin\Action\UserAction->__construct()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(298): ReflectionClass->newInstanceArgs()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#12 {main}
+Code: 0 Message: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入
+RuntimeException: 类 QPHP\core\model\mysql\MysqlM 构造参数 table 无类型、无默认值，无法自动注入 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php:285
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(21): QPHP\core\container\Container->make()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(43): QPHP\core\model\ModelFactory->createModel()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(29): QPHP\core\model\Model->getInstance()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(19): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(16): admin\Model\UserModel->__construct()
+#6 [internal function]: admin\Action\UserAction->__construct()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(298): ReflectionClass->newInstanceArgs()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#12 {main}

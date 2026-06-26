@@ -1,0 +1,42 @@
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php): Failed to open stream: No such file or directory
+Unknown error on line 363 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/view
+The wrong time: 2026-06-26 05:16:51
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:363
+Stack trace:
+#0 [internal function]: QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(269): class_exists()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php): Failed to open stream: No such file or directory
+Unknown error on line 363 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/view
+The wrong time: 2026-06-26 05:16:54
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:363
+Stack trace:
+#0 [internal function]: QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(269): class_exists()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php): Failed to open stream: No such file or directory
+Unknown error on line 363 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/view
+The wrong time: 2026-06-26 05:16:55
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/View.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:363
+Stack trace:
+#0 [internal function]: QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(269): class_exists()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\container\Container.class.php(159): QPHP\core\container\Container->resolve()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(151): QPHP\core\container\Container->make()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}

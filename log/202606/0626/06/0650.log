@@ -1,0 +1,15 @@
+Code: 42S02 Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.q_user_01' doesn't exist
+PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qphp_01.q_user_01' doesn't exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:206
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(206): PDOStatement->execute()
+#1 [internal function]: QPHP\core\pdo\abs\QDbPdo->getRows()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(186): call_user_func_array()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(249): QPHP\core\model\abs\BaseModel->executeSql()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(127): QPHP\core\model\Model->executeSql()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(108): admin\Model\UserModel->getUser01()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(115): admin\Model\UserModel->getUser()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#11 {main}

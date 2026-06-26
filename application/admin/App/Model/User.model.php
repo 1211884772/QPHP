@@ -1,6 +1,7 @@
 <?php
 namespace admin\Model;
 
+use QPHP\core\container\Container;
 use QPHP\core\func\Func;
 use QPHP\core\model\Model;
 
@@ -12,9 +13,11 @@ class UserModel extends Model
     protected string $table='mm_user';//数据表
     protected string $key='id';//主键
     protected string $dbType='mysql';//数据库类型
+
     public function __construct()
     {
         parent::__construct();
+
     }
 
     /**
@@ -101,7 +104,6 @@ class UserModel extends Model
 
         $data = [];
         //第二页 id<35 //分页由前端做，一次性返回多条数据
-
         $data_1 = $this->getUser01();
         $data_2 = $this->getUser02();
         $data_3 = $this->getUser03();
@@ -114,6 +116,16 @@ class UserModel extends Model
     }
 
 
+    public function getUser00(){
+        //return array("1","2","3");
+        //第二页 id<35 //分页由前端做，一次性返回多条数据
+
+        $sql1="select * from mm_user where id<100  ORDER BY id desc limit 5";
+       // $this->getLastSql();
+        $data_1 = $this->Db('mysql_0')->executeSql("getRows",$sql1);
+
+        return $data_1;
+    }
     public function getUser01(){
         //return array("1","2","3");
         //第二页 id<35 //分页由前端做，一次性返回多条数据

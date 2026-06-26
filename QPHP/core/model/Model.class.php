@@ -1,9 +1,12 @@
 <?php
 namespace QPHP\core\model;
 
+use QPHP\core\cache\redis\QRedis;
+use QPHP\core\container\Container;
 use QPHP\core\model\intf\IModel;
 use QPHP\core\model\intf\IModelFactory;
 use QPHP\core\model\oracle\OracleM;
+use QPHP\core\model\mysql\MysqlM;
 
 /**
  * Class Model类
@@ -15,19 +18,46 @@ class Model implements IModel
 
     protected string $dbType='mysql';
 
-    private OracleM|NULL $interface_model;
+    private OracleM|MysqlM|null $interface_model = null;
+    private IModelFactory $factory;
 
     public function __construct()
     {
-        $this->setFactory(new ModelFactory());
+        // 仅注入工厂，不创建数据库实例
+        $modelFactory = Container::getInstance()->make(ModelFactory::class);
+        $this->factory = $modelFactory;
+        $this->getInstance();
+
     }
 
-    private function setFactory(IModelFactory $modelFactory):void
+    /**
+     * 懒加载：真正实例化底层数据库模型
+     * @throws Exception
+     */
+    protected function getInstance(): OracleM|MysqlM
     {
-
-        $model_factory = $modelFactory;
-        $this->interface_model= $model_factory->createModel($this->dbType,$this->table,$this->key);
+        if ($this->interface_model === null) {
+            $this->interface_model = $this->factory->createModel(
+                $this->dbType,
+                $this->table,
+                $this->key
+            );
+        }
+        return $this->interface_model;
     }
+//    public function __construct()
+//    {
+//        $modelFactory=Container::getInstance()->make(ModelFactory::class);
+//        //$this->setFactory(new ModelFactory());
+//        $this->setFactory($modelFactory);
+//    }
+//
+//    private function setFactory(IModelFactory $modelFactory):void
+//    {
+//
+//        // 从容器取出工厂实例，调用方法
+//        $this->interface_model= $modelFactory->createModel($this->dbType,$this->table,$this->key);
+//    }
 
     public function __destruct()
     {

@@ -37,20 +37,29 @@
         <?php } ?>
     </tbody>
 
-    <tbody>
-    <?php foreach($data_s as &$v){ ?>
+
+</table>
+
+
+
+<table class="tab-list-1 tab-list-break">
+    <thead>
     <tr>
-        <td><?=$v['id']?></td>
-        <td><?=$v['name']?></td>
-        <td><?=$v['pwd']?></td>
-        <td><?=$v['create_time']?></td>
-        <td><?=$v['updat_time']?></td>
+        <th>用户ID</th>
+        <th>用户名</th>
+        <th>年龄</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($data_s as &$v1){ ?>
+    <tr>
+        <td><?=$v1['id']?></td>
+        <td><?=$v1['username']?></td>
+        <td><?=$v1['pwd']?></td>
         <td>
         </td>
     </tr>
     <?php } ?>
     </tbody>
 </table>
-
-
-

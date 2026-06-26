@@ -1,0 +1,16 @@
+Code: 0 Message: Call to a member function Db() on null
+Error: Call to a member function Db() on null in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:148
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->view()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Call to a member function Db() on null
+Error: Call to a member function Db() on null in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:148
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->view()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(154): QPHP\core\action\Action->call()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}

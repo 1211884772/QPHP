@@ -9,6 +9,13 @@ use QPHP\core\lang\Lang;
 
 class UserAction extends CommonAction
 {
+    private ?UserModel $userModel=null;
+    public function __construct()
+    {
+        parent::__construct();
+        $this->userModel = new UserModel();
+
+    }
 
     /**
      * 测试验证器
@@ -80,9 +87,12 @@ class UserAction extends CommonAction
         //$userData= $this->getUserId();
         //var_dump($userData);
        // echo $a;
+        $status=opcache_get_status();
+        echo var_export($status["opcache_enabled"],true).PHP_EOL;
+        echo getenv("PHP_FCGI_MAX_REQUESTS").PHP_EOL;
 
         echo 'user hello';
-        $model = new UserModel();
+        $model = $this->userModel;
 
         //$model->getLastSql();
  //       $th1=new Thread();//10个线程
@@ -105,9 +115,9 @@ class UserAction extends CommonAction
 //        echo '<pre>';
 //        print_r($data);
 
-        $dataS = $model->getUser();
+        $dataS = $model->getUser00();
         echo '<pre>';
-        print_r($dataS);
+       // print_r($dataS);
 
         $data = $model->getUsers();
         echo '<pre>';
@@ -121,7 +131,7 @@ class UserAction extends CommonAction
 
         $data_count = $model->getCount();
         echo '<pre>';
-       // print_r($data_count);
+        print_r($data_count);
 
         echo "==========================";
 
@@ -141,10 +151,11 @@ class UserAction extends CommonAction
     }
 
     public function view(){
-        extract($this->input);
-        $id = isset($id)?$id:0;
-        $model = new UserModel();
-        $data = $model->Db('mysql_0')->table('mm_user')->where("id={$id}")->find();
+
+        $id = isset($this->input['id'])?$this->input['id']:0;
+        echo $id;
+        //$userModel = new UserModel();
+        $data = $this->userModel->Db('mysql_0')->table('mm_user')->where("id={$id}")->find();
         $this->display('user/view.html',array(
             'data'=>$data
         ));
